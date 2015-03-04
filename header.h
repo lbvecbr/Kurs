@@ -18,8 +18,6 @@ struct FIO{
 
 
 struct Blank {
-
-	
 	int priznakVipoln;
     FIO zakazchikFio;
 	FIO MasterFio;
@@ -27,8 +25,7 @@ struct Blank {
 	char* vidTS;
 	char* tipObsluj;
 	Today dataZakaza;
-	Today dataIspolnenija ;
-
+	Today dataIspolnenija;
 };
 
 
@@ -39,6 +36,12 @@ struct Blank {
 Blank newBlank();
 Today setDate();
 void showBlank(Blank blank);
+int saveBlank(Blank blank);
+void drawLine(char start, char ch, char end, int n);
+void drawConstString(char start, char* str, char end);
+void drawVarString(char start, string str, char end);
+void yesOrCansel(Blank blank);
+
 
 
 

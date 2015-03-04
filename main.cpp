@@ -1,7 +1,7 @@
 #include <iostream>
 #include <conio.h>
-#include "header.h"
 #include <ctime>
+#include "header.h"
 
 using namespace std;
 
@@ -12,8 +12,7 @@ void main() {
 	Blank blank;
 	
   do{
-	    // cout << "\xbb";
-		cout << endl;
+		cout << endl << endl;
 		cout << "		1.  Создание бланка тех-обслуживания клиента: " << endl;
 		cout << "		2.  Показать таблицу бланков: " << endl;
 		cout << "		3.  Поиск по Ф.И.О. заказчика: " << endl;
@@ -34,11 +33,12 @@ void main() {
 		cin >> n;
 
 		switch (n){
-			case 1: blank = newBlank();
-					break;
+			case 1: blank = newBlank(); break;
+					
+
 			
 		
-			default: cout << "Вы ввели неправильный номер";
+			default: system("cls"); 
 		}
 
 	} while (n != 15);
